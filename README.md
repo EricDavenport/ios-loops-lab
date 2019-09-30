@@ -108,8 +108,13 @@ for number in 20...150 where number % 10 == 4{
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
+var number: Int
+
+
 
 `Print out numbers: 31, 35, 40 to 60.`
+Answer
+
 
 ***
 ## Question 11
@@ -127,7 +132,7 @@ while (i > 3) {
  
 ```
 Answer
-Ciode owukld run on forvever due to the fact there is no break or stopping point. THe is a counter i += 1, causong the code to run continuously.
+Code would run on forvever due to the fact there is no break or stopping point. THe is a counter i += 1, causong the code to run continuously.
 
 ***
 ## Question 12
@@ -217,6 +222,18 @@ the repeat loop says repeat the print i = "i's value" while i is less than or eq
 ## Question 1
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
+Break informs the program to stop running. The conditions have been met and it no longer need to contiue running.
+
+if x = 13 {
+print("The game is over")
+break
+} else {
+print("You still have 5 additional levels remaining")
+continue
+}
+
+
+Continue is when the code needs to still run following executing the code. Continue will allow the code to move forward with the next.
 
 ***
 ## Question 2
