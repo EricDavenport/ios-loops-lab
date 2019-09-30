@@ -13,31 +13,61 @@
 ## Question 1
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
-
+Answer
+for num1 in 1...150{
+print(num1)
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+Answer
+for num2 in 142..<159{
+print(num2)
+}
 
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
+Answer
+for num3 in 15...80{
+    if num3 % 2 == 0 {
+        print(num3)
+    }else {
+        print("")
+    }
+}
 
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
-
+Answer
+for num3 in 19...51{
+    if num3 % 2 == 1 {
+        print(num3)
+    }else {
+        print("")
+    }
+}
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
+for number in 1..<100 where number % 10 == 5{
+    print("\(number)")
+}
+
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
+Answer
+for number in 1...40 where number % 10 == 7{
+    print("\(number)")
+}
 
 ***
 ## Question 7
@@ -46,12 +76,22 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+Answer
+for number in 20...150 where number % 3 == 0{
+    print("\(number)")
+}
+
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+Answer
+for number in 20...150 where (number % 3 == 0 && number % 2 == 0){
+    print("\(number)")
+}
+
 
 ***
 ## Question 9
@@ -60,6 +100,10 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+Answer 
+for number in 20...150 where number % 10 == 4{
+    print("\(number)")
+}
 ***
 ## Question 10
 
@@ -80,7 +124,10 @@ while (i > 3) {
 }
 
 // Your explanation here
+ 
 ```
+Answer
+Ciode owukld run on forvever due to the fact there is no break or stopping point. THe is a counter i += 1, causong the code to run continuously.
 
 ***
 ## Question 12
@@ -92,6 +139,9 @@ var i = 5
 
 while (i > 3) {
     i += 1
+    if i = 9{
+    break
+}
 }
 ```
 
@@ -107,6 +157,13 @@ while (i > 3) {
     i += 1
 }
 ```
+Answer
+var i = 5
+
+while (i > 3 && i < 1005) {
+    i += 1
+    
+}
 
 ***
 ## Question 14
@@ -120,6 +177,15 @@ while (i > 3) {
     i += 1
 }
 ```
+Answer
+var i = 5
+
+while (i > 3 && i <= 1004) {
+    i += 1
+    if i % 2 == 0{
+        print("\(i)" )
+    }
+}
 
 ***
 ## Question 15
@@ -142,6 +208,8 @@ repeat {
     i += 1
 } while i <= 10
 ```
+Both outputs should be the same. The while loop is saying while i is lrss than or equal to 10 print i = "i's value" counting upward with i += 1.
+the repeat loop says repeat the print i = "i's value" while i is less than or equal to 10 as well. Both loops repeat the same function.
 
 # Bonus =)
 
