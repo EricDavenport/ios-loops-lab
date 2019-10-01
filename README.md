@@ -76,21 +76,24 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+```
 Answer
 for number in 20...150 where number % 3 == 0{
     print("\(number)")
 }
-
+```
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+```
 Answer
 for number in 20...150 where (number % 3 == 0 && number % 2 == 0){
     print("\(number)")
 }
+```
 
 
 ***
@@ -100,10 +103,12 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+```
 Answer 
 for number in 20...150 where number % 10 == 4{
     print("\(number)")
 }
+```
 ***
 ## Question 10
 
@@ -113,7 +118,20 @@ var number: Int
 
 
 `Print out numbers: 31, 35, 40 to 60.`
+```
 Answer
+let num101 = 20...150
+for numb in num101{
+switch numb {
+case 31:
+    print("\(numb)")
+case 35:
+    print("\(numb)")
+case 40...60:
+    print("\(numb)")
+default:
+    break
+```
 
 
 ***
@@ -162,6 +180,7 @@ while (i > 3) {
     i += 1
 }
 ```
+```
 Answer
 var i = 5
 
@@ -169,7 +188,7 @@ while (i > 3 && i < 1005) {
     i += 1
     
 }
-
+```
 ***
 ## Question 14
 
@@ -182,6 +201,7 @@ while (i > 3) {
     i += 1
 }
 ```
+```
 Answer
 var i = 5
 
@@ -191,7 +211,7 @@ while (i > 3 && i <= 1004) {
         print("\(i)" )
     }
 }
-
+```
 ***
 ## Question 15
 
@@ -213,9 +233,10 @@ repeat {
     i += 1
 } while i <= 10
 ```
+```
 Both outputs should be the same. The while loop is saying while i is lrss than or equal to 10 print i = "i's value" counting upward with i += 1.
 the repeat loop says repeat the print i = "i's value" while i is less than or equal to 10 as well. Both loops repeat the same function.
-
+```
 # Bonus =)
 
 ***
@@ -223,7 +244,7 @@ the repeat loop says repeat the print i = "i's value" while i is less than or eq
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
 Break informs the program to stop running. The conditions have been met and it no longer need to contiue running.
-
+```
 if x = 13 {
 print("The game is over")
 break
@@ -234,7 +255,7 @@ continue
 
 
 Continue is when the code needs to still run following executing the code. Continue will allow the code to move forward with the next.
-
+```
 ***
 ## Question 2
 
@@ -248,18 +269,18 @@ for i in 1...10 {
     print(i)
 }
 ```
-
-[]1
-[]2
-[]3
-[]4
-[]5
+```
+[]1   [x]
+[]2   [x]
+[]3   [x]
+[]4 
+[]5 
 []6
 []7
-[]8
-[]9
-[]10
-
+[]8   [x]
+[]9   [x]
+[]10 [x]
+```
 ***
 ## Question 3
 
@@ -273,10 +294,10 @@ for i in 1...10 {
     print(i)
 }
 ```
-
-[]1
-[]2
-[]3
+```
+[]1 [x]
+[]2 [x]
+[]3 [x]
 []4
 []5
 []6
@@ -284,7 +305,7 @@ for i in 1...10 {
 []8
 []9
 []10
-
+```
 ***
 ## Question 4
 
@@ -300,7 +321,11 @@ outerloop: for x in 1...3 {
     }
 }
 ```
-
+```
+"x = 1, y = 2"
+"x = 2, y = 2"
+"x = 3, y = 2"
+```
 ***
 ## Question 5
 
